@@ -2,7 +2,7 @@
 
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('List of Patients') }}
+            {{ __('LIST OF PATIENTS') }}
         </h2>
     </x-slot>
 
@@ -17,17 +17,19 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Fname</th>
-                    <th>Lname</th>
-                    <th>Address</th>
-                    <th>Birthdate</th>
-                    <th>Admission</th>
+                    <th>FIRST NAME</th>
+                    <th>LAST NAME</th>
+                    <th>ADDRESS</th>
+                    <th>BIRTHDATE</th>
+                    <th>ADDMISSION</th>
+                    <th>EDIT PATIENT</th>
+                    <th>DISCHARGE PATIENT</th>
                 </tr>
             </thead>
 
 
 
-            <table>
+            <tbody>
                 @forelse ($patients as $patients)              
 
                 <tr>
@@ -62,7 +64,7 @@
 
 
 
-            </table>
+            </tbody>
 
 
 
@@ -78,5 +80,4 @@
 
 
 
-
-</x-app-layout>
+    </x-app-layout>

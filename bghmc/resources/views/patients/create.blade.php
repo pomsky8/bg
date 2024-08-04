@@ -2,7 +2,7 @@
 
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Add Patients') }}
+            {{ __('ADD PATIENT') }}
         </h2>
     </x-slot>
 
@@ -21,33 +21,35 @@
                     @csrf
 
                     <div>
-                        <x-input-label for="Fname" :value="__('Fname')" />
+                        <x-input-label for="Fname" :value="__('FIRST NAME')" />
                         <x-text-input id="Fname" class="block mt-1 w-full" type="text" name="Fname" :value="old('Fname')" required autofocus/>
                     </div>
 
                     <div>
-                        <x-input-label for="Lname" :value="__('Lname')" />
+                        <x-input-label for="Lname" :value="__('LAST NAME')" />
                         <x-text-input id="Lname" class="block mt-1 w-full" type="text" name="Lname" :value="old('Lname')" required autofocus/>
                     </div>
 
                     <div>
-                        <x-input-label for="Address" :value="__('Address')" />
+                        <x-input-label for="Address" :value="__('ADDRESS')" />
                         <x-text-input id="Address" class="block mt-1 w-full" type="text" name="Address" :value="old('Address')" required autofocus/>
                     </div>
 
                     <div>
-                        <x-input-label for="Birthdate" :value="__('Birthdate')" />
+                        <x-input-label for="Birthdate" :value="__('BIRTHDATE')" />
                         <x-text-input id="Birthdate" class="block mt-1 w-full" type="date" name="Birthdate" :value="old('Birthdate')" required autofocus/>
                     </div>
 
                     <div>
-                        <x-input-label for="Admission" :value="__('Admission')" />
+                        <x-input-label for="Admission" :value="__('ADMISSION')" />
                         <x-text-input id="Admission" class="block mt-1 w-full" type="text" name="Admission" :value="old('Admission')" required autofocus />
                     </div>
 
+                    <div class="py-8">
                     <x-primary-button class="ms-3">
                         {{ __('Save Patients Information') }}
                     </x-primary-button>
+                    </div>
 
 
                 </form> 
