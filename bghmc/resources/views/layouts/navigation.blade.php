@@ -20,8 +20,8 @@
                         {{ __('ADD PATIENTS') }}
                     </x-nav-link>
 
-                    <x-nav-link :href="url('patients')" :active="request()->routeIs('patients')">
-                        {{ __('PATIENTS') }}
+                    <x-nav-link :href="url('list')" :active="request()->routeIs('List')">
+                        {{ __('LISTS') }}
                     </x-nav-link>
 
 

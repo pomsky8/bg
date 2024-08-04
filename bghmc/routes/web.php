@@ -16,8 +16,12 @@ Route::get('/dashboard', function () {
 //-------------------------group controller----------------------------
 Route::controller(App\Http\Controllers\patientsController::class)->group(function () {
 
+    route::get('/list' , 'index');
     route::get('/Add-patients' , 'create');
     route::post('/Add-patients' , 'store');
+    route::get('/edit-patients/{patients_id}' , 'edit');
+    route::put('/update-patients/{patients_id}' , 'update');
+    route::delete('/delete-patients/{patients_id}', 'destroy');
 });
 
 
