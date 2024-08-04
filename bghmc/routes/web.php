@@ -14,11 +14,12 @@ Route::get('/dashboard', function () {
 
 
 //-------------------------group controller----------------------------
-Route::controller(App\Http\Controllers\patients::class)->group(function () {
+Route::controller(App\Http\Controllers\patientsController::class)->group(function () {
 
-    route::get('/patients' , 'create');
-    route::post('patients' , 'store');
+    route::get('/Add-patients' , 'create');
+    route::post('/Add-patients' , 'store');
 });
+
 
 //------------------------------------------------------------------
 

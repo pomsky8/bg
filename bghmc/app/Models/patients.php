@@ -16,6 +16,6 @@ class patients extends Model
         'Lname',
         'Address',
         'Birthdate',
-        'Admission'
+        'Admission',
     ];
 }

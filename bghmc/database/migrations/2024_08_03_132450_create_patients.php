@@ -17,7 +17,7 @@ return new class extends Migration
             $table->char('Lname');
             $table->char('Address');
             $table->date('Birthdate');
-            $table->boolean('Admission');
+            $table->char('Admission');
             $table->timestamps();
         });
     }

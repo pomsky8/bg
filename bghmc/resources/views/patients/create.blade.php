@@ -2,11 +2,18 @@
 
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Patients') }}
+            {{ __('Add Patients') }}
         </h2>
     </x-slot>
 
     <div class="py-12">
+
+
+        <x-success-status class="mb-4" :status="session('message')" />
+
+        <x-validation-errors class="mb-4" :errors="$errors" />
+
+
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="py-4 px-4 bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 
@@ -35,12 +42,13 @@
 
                     <div>
                         <x-input-label for="Admission" :value="__('Admission')" />
-                        <x-text-input id="Admission" class="block mt-1 w-full" type="text" name="Admission" :value="old('Admission')" required autofocus autocomplete="username" />
+                        <x-text-input id="Admission" class="block mt-1 w-full" type="text" name="Admission" :value="old('Admission')" required autofocus />
                     </div>
 
                     <x-primary-button class="ms-3">
                         {{ __('Save Patients Information') }}
                     </x-primary-button>
+
 
                 </form> 
 

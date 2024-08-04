@@ -22,30 +22,26 @@ class patientsFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'Fname' =>[
-                'required',
-                'max:255'
-            ],
-            'Lname' =>[
-                'required',
-                'max:255'
-            ],
-            'Address' =>[
-                'required',
-                'max:255'
-            ],
-            'Birthdate' =>[
-                'required',
-                'max:255' ,
-                'date'
-            ],
-            'Admission' =>[
-                'required',
-                'max:15'
-            ]
+                'Fname' =>[
+                    'required',
 
+                ],
+                'Lname' =>[
+                    'required',
 
+                ],
+                'Address' =>[
+                    'required',
 
+                ],
+                'Birthdate' =>[
+                    'required',
+
+                ],
+                'Admission' =>[
+                    'required',
+                ]
+    
         ];
     }
 }
