@@ -41,7 +41,7 @@
                     </div>
 
                     <div>
-                        <x-input-label for="Admission" :value="__('ADMISSION')" />
+                        <x-input-label for="Admission" :value="__('ADMISSION STATUS')" />
                         <x-text-input id="Admission" class="block mt-1 w-full" type="text" name="Admission" :value="old('Admission')" required autofocus />
                     </div>
 

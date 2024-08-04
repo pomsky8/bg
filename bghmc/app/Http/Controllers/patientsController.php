@@ -48,7 +48,7 @@ class patientsController extends Controller
             'Admission' => $data['Admission'],
         ]);
 
-        return redirect('/Add-patients')->with('message' , 'Patients Information Succefuly Updated');
+        return redirect('list')->with('message' , 'Patients Information Succefuly Updated');
     }
 
     public function destroy($patients_id)

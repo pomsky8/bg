@@ -21,9 +21,9 @@
                     <th>LAST NAME</th>
                     <th>ADDRESS</th>
                     <th>BIRTHDATE</th>
-                    <th>ADDMISSION</th>
-                    <th>EDIT PATIENT</th>
-                    <th>DISCHARGE PATIENT</th>
+                    <th>ADDMISSION STATUS</th>
+                    <th class="py-9">EDIT PATIENT</th>
+                    <th class="px-11">DISCHARGE PATIENT</th>
                 </tr>
             </thead>
 
@@ -46,7 +46,7 @@
 
                     <td>
                         
-                        <form action="{{ url('/delete-patients/'.$patients->id)}}" method="POST" >
+                        <form action="{{ url('/delete-patients/'.$patients->id)}}" method="POST" class="px-1">
                             @csrf
                             @method('DELETE')
                             <x-danger-button class="btn btn-danger">Discharge</x-button>

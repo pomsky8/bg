@@ -21,7 +21,7 @@
                     </x-nav-link>
 
                     <x-nav-link :href="url('list')" :active="request()->routeIs('List')">
-                        {{ __('LISTS') }}
+                        {{ __('LISTS OF PATIENTS') }}
                     </x-nav-link>
 
 
