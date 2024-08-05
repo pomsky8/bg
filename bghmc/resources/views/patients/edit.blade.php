@@ -27,7 +27,7 @@
                         <x-input-label for="Lname" :value="__('Lname')" />
                         <x-text-input id="Lname" class="block mt-1 w-full" type="text" name="Lname" :value="$patients->Lname" required autofocus/>
                     </div>
-
+{{----}}
                     <div>
                         <x-input-label for="Address" :value="__('Address')" />
                         <x-text-input id="Address" class="block mt-1 w-full" type="text" name="Address" :value="$patients->Address" required autofocus/>

@@ -26,7 +26,7 @@ class patientsController extends Controller
         $data = $request->validated();
 
         $patients = patients::create($data);
-        return redirect('/Add-patients')->with('message' , 'Patients Succefuly Added!!');
+        return redirect('list')->with('message' , 'Patients Succefuly Added!!');
     }
 
     public function edit($patients_id)
