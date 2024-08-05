@@ -29,7 +29,7 @@
                     </div>
 {{----}}
                     <div>
-                        <x-input-label for="Address" :value="__('Address')" />
+                        <x-input-label for="Address" :value="__('Address11')" />
                         <x-text-input id="Address" class="block mt-1 w-full" type="text" name="Address" :value="$patients->Address" required autofocus/>
                     </div>
 
